@@ -1,0 +1,29 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: tiger
+    url: jdbc:oracle:thin:@localhost:1521/Orcl
+    username: system
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    password: cakuzfgdiitcpwke
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: pradhanjyotiprakash85@gmail.com
+forgot-pwd-app:
+    messages:
+      forgotPwdMailSubject: Forgot Password - Jyotiprakash
+      forgotPwdMailBodyTemplateFile: FORGOT-PWD-EMAIL-BODY-TEMPLATE.txt
+      noRecord: No Record Found With Given Email
+      pwdSent: Password sent to Registered email
+      error: Internal Server Error
